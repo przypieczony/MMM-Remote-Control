@@ -1,14 +1,15 @@
 {
-    "TITLE": "Magic Mirror Menu",
+    "TITLE": "iMirror Menu",
 
     "EDIT_MENU_NAME": "Edit view",
     "SHUTDOWN_MENU_NAME": "Power",
     "CONFIGURE_MENU_NAME": "Edit config.js",
-    "VIEW_MIRROR": "MagicMirror<sup>2</sup>",
+    "VIEW_MIRROR": "iMirror",
 
     "BACK": "Back",
 
     "BRIGHTNESS": "Brightness",
+    "BRIGHTESSRESET": "Reset",
 
     "REFRESHMM" : "Refresh Browser",
     "MONITOROFF": "Turn monitor OFF",
@@ -21,8 +22,8 @@
     "MINIMIZE": "Minimize Browser",
     "DEVTOOLS": "Open DevTools",
 
-    "SHOWALL": "All",
-    "HIDEALL": "All",
+    "SHOWALL": "Show All",
+    "HIDEALL": "Hide All",
 
     "ADD_MODULE": "Add module",
     "SEARCH": "Search &hellip;",
