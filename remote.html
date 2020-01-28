@@ -25,7 +25,7 @@
             <div class="fill">
                 <div class="menu above-fold">
                     <!-- general back button -->
-                    <div id="back-button" class="menu-element hidden button power-menu edit-menu settings-menu add-module-menu update-menu alert-menu">
+                    <div id="back-button" class="menu-element hidden button power-menu edit-menu settings-menu add-module-menu update-menu alert-menu imirror-settings-menu">
                         <span class="fa fa-fw fa-angle-left" aria-hidden="true"></span>
                         <class="text">%%TRANSLATE:BACK%%</span>
                     </div>
@@ -89,12 +89,17 @@
                         <span class="text">%%TRANSLATE:UPDATE_AVAILABLE%%</span>
                     </div>
                 </div>
-                <div id="below-fold" class="below-fold menu-element hidden edit-menu settings-menu add-module-menu update-menu alert-menu main-menu power-menu">
+                <div id="below-fold" class="below-fold menu-element hidden edit-menu settings-menu add-module-menu update-menu alert-menu main-menu power-menu imirror-settings-menu">
                     <div class="menu-container">
                         <!-- main menu -->
                         <div id="power-button" class="menu-element hidden button main-menu">
                             <span class="fa fa-fw fa-power-off" aria-hidden="true"></span>
                             <span class="text">%%TRANSLATE:SHUTDOWN_MENU_NAME%%</span>
+                            <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span>
+                        </div>
+                        <div id="imirror-settings-button" class="menu-element hidden button main-menu">
+                            <span class="fa fa-fw fa-settings" aria-hidden="true"></span>
+                            <span class="text">%%TRANSLATE:SETTINGS_MENU%%</span>
                             <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span>
                         </div>
                         <div id="edit-button" class="menu-element hidden button main-menu">
@@ -166,6 +171,15 @@
                         <div id="devtools-button" class="menu-element hidden button power-menu">
                             <span class="fa fa-fw fa-terminal" aria-hidden="true"></span>
                             <span class="text">%%TRANSLATE:DEVTOOLS%%</span>
+                        </div>
+                        <!-- settings menu -->
+                        <div id="reset-wifi-button" class="menu-element hidden button imirror-settings-menu">
+                            <span class="fa fa-fw fa-wifi" aria-hidden="true"></span>
+                            <span class="text">%%TRANSLATE:CHANGE_WIFI%%</span>
+                        </div>
+                        <div id="toggle-led-button" class="menu-element hidden button imirror-settings-menu">
+                            <span class="fa fa-fw fa-toggle-led" aria-hidden="true"></span>
+                            <span class="text">%%TRANSLATE:TOGGLE_LED%%</span>
                         </div>
                     </div>
                     <!-- below fold part of alert menu -->

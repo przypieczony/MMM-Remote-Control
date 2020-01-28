@@ -1425,6 +1425,9 @@ var buttons = {
     "power-button": function() {
         window.location.hash = "power-menu";
     },
+    "imirror-settings-button": function() {
+        window.location.hash = "imirror-settings-menu";
+    },
     "edit-button": function() {
         window.location.hash = "edit-menu";
     },
@@ -1563,7 +1566,12 @@ var buttons = {
     "devtools-button": function() {
         Remote.sendSocketNotification("REMOTE_ACTION", { action: "DEVTOOLS" });
     },
-
+    "reset-wifi-button": function() {
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "RESET_WIFI" });
+    },
+    "toggle-led-button": function() {
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "LED_SWITCH" });
+    },
     // config menu buttons
     "add-module": function() {
         window.location.hash = "add-module-menu";

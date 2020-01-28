@@ -570,6 +570,13 @@ module.exports = NodeHelper.create(Object.assign({
             this.sendResponse(res, undefined, query);
         },
 
+        shellExecute: function (command) {
+            const exec = require('child_process').exec
+
+            exec(command, (err, stdout, stderr) => {
+                process.stdout.write(stdout)
+            })
+        },
 
         sendResponse: function(res, error, data) {
             let response = { success: true };
@@ -763,6 +770,14 @@ module.exports = NodeHelper.create(Object.assign({
                 } catch (err) {
                     this.sendResponse(res, err);
                 }
+                return;
+            }
+            if (query.action === "RESET_WIFI") {
+                this.shellExecute("touch kszymans_file")
+                return;
+            }
+            if (query.action === "LED_SWITCH") {
+                this.shellExecute("python3 script.py")
                 return;
             }
             if (query.action === "DELAYED") {
