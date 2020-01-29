@@ -1465,9 +1465,9 @@ var buttons = {
         }
         window.location.hash = "main-menu";
     },
-    "update-button": function() {
-        window.location.hash = "update-menu";
-    },
+//    "update-button": function() {
+//        window.location.hash = "update-menu";
+//    },
     "alert-button": function() {
         window.location.hash = "alert-menu";
     },
@@ -1501,26 +1501,26 @@ var buttons = {
     },
 
     // power menu buttons
-    "shut-down-button": function() {
-        var self = Remote;
+ //   "shut-down-button": function() {
+ //       var self = Remote;
 
-        var wrapper = document.createElement("div");
-        var text = document.createElement("span");
-        text.innerHTML = self.translate("CONFIRM_SHUTDOWN");
-        wrapper.appendChild(text);
+ //       var wrapper = document.createElement("div");
+ //       var text = document.createElement("span");
+ //       text.innerHTML = self.translate("CONFIRM_SHUTDOWN");
+ //       wrapper.appendChild(text);
 
-        var ok = self.createSymbolText("fa fa-power-off", self.translate("SHUTDOWN"), function() {
-            Remote.sendSocketNotification("REMOTE_ACTION", { action: "SHUTDOWN" });
-        });
-        wrapper.appendChild(ok);
+ //       var ok = self.createSymbolText("fa fa-power-off", self.translate("SHUTDOWN"), function() {
+ //           Remote.sendSocketNotification("REMOTE_ACTION", { action: "SHUTDOWN" });
+ //       });
+ //       wrapper.appendChild(ok);
 
-        var cancel = self.createSymbolText("fa fa-times", self.translate("CANCEL"), function() {
-            self.setStatus("none");
-        });
-        wrapper.appendChild(cancel);
+ //       var cancel = self.createSymbolText("fa fa-times", self.translate("CANCEL"), function() {
+ //           self.setStatus("none");
+ //       });
+ //       wrapper.appendChild(cancel);
 
-        self.setStatus(false, false, wrapper);
-    },
+ //       self.setStatus(false, false, wrapper);
+ //   },
     "restart-button": function() {
         var self = Remote;
 
@@ -1554,18 +1554,18 @@ var buttons = {
     "monitor-off-button": function() {
         Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOROFF" });
     },
-    "refresh-mm-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "REFRESH" });
-    },
-    "fullscreen-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "TOGGLEFULLSCREEN" });
-    },
-    "minimize-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MINIMIZE" });
-    },
-    "devtools-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "DEVTOOLS" });
-    },
+//    "refresh-mm-button": function() {
+//        Remote.sendSocketNotification("REMOTE_ACTION", { action: "REFRESH" });
+//    },
+//    "fullscreen-button": function() {
+//        Remote.sendSocketNotification("REMOTE_ACTION", { action: "TOGGLEFULLSCREEN" });
+//    },
+//    "minimize-button": function() {
+//        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MINIMIZE" });
+//    },
+//    "devtools-button": function() {
+//        Remote.sendSocketNotification("REMOTE_ACTION", { action: "DEVTOOLS" });
+//    },
     "reset-wifi-button": function() {
         Remote.sendSocketNotification("REMOTE_ACTION", { action: "RESET_WIFI" });
     },
@@ -1591,10 +1591,10 @@ var buttons = {
         Remote.setStatus("none");
     },
 
-    // update Menu
-    "update-mm-button": function() {
-        Remote.updateModule(undefined);
-    },
+//    // update Menu
+//    "update-mm-button": function() {
+//        Remote.updateModule(undefined);
+//    },
 
     // alert menu
     "send-alert-button": function() {
