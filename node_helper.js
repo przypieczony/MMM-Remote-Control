@@ -127,35 +127,6 @@ module.exports = NodeHelper.create(Object.assign({
                     res.send(transformedData);
                 }
             });
-
-            this.expressApp.get("/get", function(req, res) {
-                var query = url.parse(req.url, true).query;
-
-                self.answerGet(query, res);
-            });
-            this.expressApp.post("/post", function(req, res) {
-                var query = url.parse(req.url, true).query;
-
-                self.answerPost(query, req, res);
-            });
-
-            this.expressApp.get("/config-help.html", function(req, res) {
-                var query = url.parse(req.url, true).query;
-
-                self.answerConfigHelp(query, res);
-            });
-
-            this.expressApp.get("/remote", function(req, res) {
-                var query = url.parse(req.url, true).query;
-
-                if (query.action) {
-                    var result = self.executeQuery(query, res);
-                    if (result === true) {
-                        return;
-                    }
-                }
-                res.send({ "status": "error", "reason": "unknown_command", "info": "original input: " + JSON.stringify(query) });
-            });
         },
 
         capitalizeFirst: function(string) {
