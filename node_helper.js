@@ -118,7 +118,7 @@ module.exports = NodeHelper.create(Object.assign({
         createRoutes: function() {
             var self = this;
 
-            this.expressApp.get("/remote.html", function(req, res) {
+            this.expressApp.get("/", function(req, res) {
                 if (self.template === "") {
                     res.send(503);
                 } else {
@@ -880,7 +880,7 @@ module.exports = NodeHelper.create(Object.assign({
 
         controlPm2: function(res, query) {
             var pm2 = require('pm2');
-            let processName = query.processName || this.thisConfig.pm2ProcessName || "mm";
+            let processName = query.processName || this.thisConfig.pm2ProcessName || "MagicMirror";
 
             pm2.connect((err) => {
                 if (err) {
@@ -889,7 +889,7 @@ module.exports = NodeHelper.create(Object.assign({
                 }
                 console.log(`PM2 process: ${query.action.toLowerCase()} ${processName}`);
 
-                pm2.stop(processName, (err, apps) => {
+                pm2.restart(processName, (err, apps) => {
                     this.sendResponse(res, undefined, { action: action, processName: processName });
                     pm2.disconnect();
                     if (err) { this.sendResponse(res, err); }
