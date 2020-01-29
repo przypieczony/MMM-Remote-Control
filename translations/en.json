@@ -1,9 +1,9 @@
 {
     "TITLE": "iMirror Menu",
 
-    "EDIT_MENU_NAME": "Edit view",
+    "EDIT_MENU_NAME": "Show/Hide modules",
     "SHUTDOWN_MENU_NAME": "Power",
-    "CONFIGURE_MENU_NAME": "Edit config.js",
+    "CONFIGURE_MENU_NAME": "Edit modules",
     "VIEW_MIRROR": "iMirror",
 
     "BACK": "Back",
@@ -16,7 +16,7 @@
     "MONITORON": "Turn monitor ON",
     "MONITORTIMED": "Turn monitor ON briefly",
     "RESTART": "Restart",
-    "RESTARTMM": "Restart MagicMirror<sup>2</sup>",
+    "RESTARTMM": "Soft Restart ",
     "SHUTDOWN": "Shutdown",
     "FULLSCREEN": "Toggle Fullscreen",
     "MINIMIZE": "Minimize Browser",

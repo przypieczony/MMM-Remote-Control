@@ -25,7 +25,7 @@
             <div class="fill">
                 <div class="menu above-fold">
                     <!-- general back button -->
-                    <div id="back-button" class="menu-element hidden button power-menu edit-menu settings-menu add-module-menu update-menu alert-menu imirror-settings-menu">
+                    <div id="back-button" class="menu-element hidden button power-menu edit-menu settings-menu add-module-menu alert-menu imirror-settings-menu">
                         <span class="fa fa-fw fa-angle-left" aria-hidden="true"></span>
                         <class="text">%%TRANSLATE:BACK%%</span>
                     </div>
@@ -79,17 +79,8 @@
                         <input class="input-with-symbol" id="add-module-search" type="text" placeholder="%%TRANSLATE:SEARCH%%" size="10"> </input>
                         <span id="delete-search-input" class="fa fa-times-circle delete-button" style="display:none;"></span>
                     </div>
-                    <!-- update menu -->
-                    <div id="update-mm-button" class="menu-element hidden button update-menu">
-                        <span class="fa fa-fw fa-toggle-up" aria-hidden="true"></span>
-                        <span class="text">%%TRANSLATE:UPDATEMM%%</span>
-                    </div>
-                    <div id="update-mm-status" class="menu-element flex-like-button hidden">
-                        <span class="fa fa-fw fa-info-circle" aria-hidden="true"></span>
-                        <span class="text">%%TRANSLATE:UPDATE_AVAILABLE%%</span>
-                    </div>
                 </div>
-                <div id="below-fold" class="below-fold menu-element hidden edit-menu settings-menu add-module-menu update-menu alert-menu main-menu power-menu imirror-settings-menu">
+                <div id="below-fold" class="below-fold menu-element hidden edit-menu settings-menu add-module-menu alert-menu main-menu power-menu imirror-settings-menu">
                     <div class="menu-container">
                         <!-- main menu -->
                         <div id="power-button" class="menu-element hidden button main-menu">
@@ -130,10 +121,6 @@
                             <span class="text">%%TRANSLATE:VIEW_MIRROR%%</span>
                         </div>
                         <!-- power menu -->
-                        <div id="shut-down-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-power-off" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:SHUTDOWN%%</span>
-                        </div>
                         <div id="restart-button" class="menu-element hidden button power-menu">
                             <span class="fa fa-fw fa-refresh" aria-hidden="true"></span>
                             <span class="text">%%TRANSLATE:RESTART%%</span>
@@ -141,10 +128,6 @@
                         <div id="restart-mm-button" class="menu-element hidden button power-menu">
                             <span class="fa fa-fw fa-recycle" aria-hidden="true"></span>
                             <span class="text">%%TRANSLATE:RESTARTMM%%</span>
-                        </div>
-                        <div id="refresh-mm-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-globe" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:REFRESHMM%%</span>
                         </div>
                         <div id="monitor-on-button" class="menu-element hidden button power-menu">
                             <span class="stack fa-fw">
@@ -159,18 +142,6 @@
                             <span class="fa fa-fw fa-close inner-monitor-label fa-stack-1x" aria-hidden="true"></span>
                             </span>
                             <span class="text">%%TRANSLATE:MONITOROFF%%</span>
-                        </div>
-                        <div id="fullscreen-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-arrows-alt" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:FULLSCREEN%%</span>
-                        </div>
-                        <div id="minimize-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-window-minimize" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:MINIMIZE%%</span>
-                        </div>
-                        <div id="devtools-button" class="menu-element hidden button power-menu">
-                            <span class="fa fa-fw fa-terminal" aria-hidden="true"></span>
-                            <span class="text">%%TRANSLATE:DEVTOOLS%%</span>
                         </div>
                         <!-- settings menu -->
                         <div id="reset-wifi-button" class="menu-element hidden button imirror-settings-menu">
@@ -238,19 +209,6 @@
                             <span class="text">%%TRANSLATE:NO_MODULES_LOADED%%</span>
                         </div>
                         <div id="add-module-results" class="results small">
-                            <!-- elements are inserted here -->
-                        </div>
-                    </div>
-                    <div id="update-module-container" class="result-list menu-element hidden update-menu">
-                        <div id="update-module-loading">
-                            <span class="fa fa-fw fa-spinner fa-pulse"></span>
-                            <span class="text">%%TRANSLATE:LOADING%%</span>
-                        </div>
-                        <div id="update-module-empty" class="hidden">
-                            <span class="fa fa-fw fa-exclamation-circle"></span>
-                            <span class="text">%%TRANSLATE:NO_MODULES_LOADED%%</span>
-                        </div>
-                        <div id="update-module-results" class="results small">
                             <!-- elements are inserted here -->
                         </div>
                     </div>
