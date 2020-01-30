@@ -1570,6 +1570,12 @@ var buttons = {
     "toggle-led-button": function() {
         Remote.sendSocketNotification("REMOTE_ACTION", { action: "LED_SWITCH" });
     },
+    "horizontal-monitor-button": function() {
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOR_VERTICAL" });
+    },
+    "vertical-monitor-button": function() {
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOR_HORIZONTAL" });
+    },
     // config menu buttons
     "add-module": function() {
         window.location.hash = "add-module-menu";

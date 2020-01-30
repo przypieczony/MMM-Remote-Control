@@ -747,6 +747,14 @@ module.exports = NodeHelper.create(Object.assign({
                 this.shellExecute("touch kszymans_file")
                 return;
             }
+            if (query.action === "MONITOR_VERTICAL") {
+                this.shellExecute("echo vertical")
+                return;
+            }
+            if (query.action === "MONITOR_HORIZONTAL") {
+                this.shellExecute("echo horizontal")
+                return;
+            }
             if (query.action === "LED_SWITCH") {
                 this.shellExecute("python3 script.py")
                 return;
