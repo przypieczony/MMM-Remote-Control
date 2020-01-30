@@ -6,10 +6,10 @@
     "CONFIGURE_MENU_NAME": "Edit modules",
     "VIEW_MIRROR": "iMirror",
 
-    "BACK": "Back",
+    "BACK": "",
 
     "BRIGHTNESS": "Brightness",
-    "BRIGHTESSRESET": "Reset",
+    "BRIGHTESSRESET": "",
 
     "REFRESHMM" : "Refresh Browser",
     "MONITOROFF": "Turn monitor OFF",
