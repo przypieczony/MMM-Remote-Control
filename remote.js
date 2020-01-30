@@ -1451,9 +1451,6 @@ var buttons = {
 
         self.setStatus(false, false, wrapper);
     },
-    "mirror-link-button": function() {
-        window.open("/", "_blank");
-    },
     "back-button": function() {
         if (window.location.hash === "#add-module-menu") {
             window.location.hash = "settings-menu";
@@ -1568,6 +1565,7 @@ var buttons = {
 //    },
     "reset-wifi-button": function() {
         Remote.sendSocketNotification("REMOTE_ACTION", { action: "RESET_WIFI" });
+        //window.open("/", "_blank");
     },
     "toggle-led-button": function() {
         Remote.sendSocketNotification("REMOTE_ACTION", { action: "LED_SWITCH" });
