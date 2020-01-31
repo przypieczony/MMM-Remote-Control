@@ -1,0 +1,93 @@
+{
+    "TITLE": "iMirror Menu",
+
+    "EDIT_MENU_NAME": "Pokaż/ukryj funkcjonalności",
+    "SHUTDOWN_MENU_NAME": "Wyłącz",
+    "CONFIGURE_MENU_NAME": "Edytuj moduły",
+    "VIEW_MIRROR": "iMirror",
+
+    "BACK": "Wróc",
+
+    "BRIGHTNESS": "Jasność",
+    "BRIGHTESSRESET": "Reset",
+
+    "REFRESHMM" : "Odśwież",
+    "MONITOROFF": "Wyłącz monitor",
+    "MONITORON": "Włącz monitor",
+    "MONITORTIMED": "Włącz monitor (timer)",
+    "RESTART": "Restart",
+    "RESTARTMM": "Soft Restart ",
+    "SHUTDOWN": "Wyłacz",
+    "FULLSCREEN": "Fullscreen",
+    "MINIMIZE": "Minimanizuj",
+    "DEVTOOLS": "Otwórz DevTools",
+
+    "CHANGE_WIFI": "Reset WiFi",
+    "SETTINGS_MENU": "Opcje",
+    "TOGGLE_LED": "LED włącz/wyłacz",
+
+    "SHOWALL": "Pokaż wszystkie",
+    "HIDEALL": "schowaj wszystkie",
+
+    "ADD_MODULE": "Dodaj funkcjonalność",
+    "SEARCH": "Szukaj &hellip;",
+    "INSTALLED": "Zainstalowane",
+    "DOWNLOAD": "Pobierz",
+    "DOWNLOADING": "Downloading &hellip;",
+    "CODE_LINK": "Zobacz kody",
+    "BY": "by",
+    "ADD_THIS": "Dodaj funkcjonalność",
+    "HELP": "Pokaż pomoc",
+    "MENU": "Menu",
+    "RESET": "Reset",
+    "NO_HEADER": "(no header)",
+    "NO_POSITION": "(invisible)",
+    "ADD_ENTRY": "Add entry",
+    "NEW_ENTRY_NAME": "(enter name of new entry)",
+    "DELETE_ENTRY": "Delete",
+    "UNSAVED_CHANGES": "Unsaved changes",
+    "OK": "Ok",
+    "DISCARD": "Discard changes",
+    "CANCEL": "Cancel",
+
+    "NO_MODULES_LOADED": "Brak aktywowanych funkcjonalności",
+    "SAVE": "Zapisz",
+
+    "EXPERIMENTAL": "This is an experimental feature, it could corrupt your config file. Backup your config first, just in case!<br>Do you want to continue?",
+    "PANIC": "Never mind.",
+    "NO_RISK_NO_FUN": "No risk no fun!",
+
+    "CONFIRM_SHUTDOWN": "Zamykanie systemu operacyjnego",
+    "CONFIRM_RESTART": "Restartowanie systemu operacyjnego",
+
+    "LOAD_ERROR": "If you see this message, an errror occured when loading the javascript file. Please go to the following link and see if this a known problem with your browser:",
+    "ISSUE_LINK": "Github issue page",
+
+    "DONE": "Zrobione Panie",
+    "ERROR": "Błąd",
+    "LOADING": "Ładowanie &hellip;",
+
+    "LOCKSTRING_WARNING": "This module was hidden by LIST_OF_MODULES, it can not be shown.",
+    "FORCE_SHOW": "Do it anyway.",
+
+	"UPDATE_MENU_NAME" : "Aktualizacje",
+	"UPDATEMM" : "Update MagicMirror<sup>2</sup>",
+    "UPDATE_AVAILABLE" : "Aktualizacje dostępne",
+
+	"ALERT_MENU_NAME" : "Alarm",
+	"SENDALERT" : "Wyślij",
+	"HIDEALERT" : "schowaj",
+    "FORM_TYPE" : "Typ:",
+    "FORM_ALERT" : "Alarm",
+    "FORM_NOTIFICATION" : "Powiadomienie",
+    "FORM_TITLE" : "Tytuł:",
+    "FORM_TITLE_PLACEHOLDER" : "Wpisz tytuł..",
+    "FORM_MESSAGE" : "Wiadomośc:",
+    "FORM_MESSAGE_PLACEHOLDER" : "Wpisz wiadomośc...",
+    "FORM_SECONDS" : "Sekundy:",
+
+
+    "RESPONSE_ERROR": "Well that didn't work. Check the MM logs for more details",
+    "MODULE_CONTROLS": "Module Controls",
+    "CUSTOM_MENU": "Moje custom menu"
+}
