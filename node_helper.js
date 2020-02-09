@@ -744,7 +744,8 @@ module.exports = NodeHelper.create(Object.assign({
                 return;
             }
             if (query.action === "RESET_WIFI") {
-                this.shellExecute("touch kszymans_file")
+                this.shellExecute("sudo rm -rf /var/local/wifi-name")
+		this.shellExecute("sudo /etc/NetworkManager/dispatcher.d/wifi-connect-check.sh wlan0 down")
                 return;
             }
             if (query.action === "MONITOR_VERTICAL") {
@@ -755,9 +756,10 @@ module.exports = NodeHelper.create(Object.assign({
                 this.shellExecute("echo horizontal")
                 return;
             }
-            if (query.action === "LED_SWITCH") {
-                this.shellExecute("python3 script.py")
-                return;
+            if (query.action === "TOGGLE_LED") {
+                self.sendResponse(res);
+                self.sendSocketNotification(query.action);
+                return true;
             }
             if (query.action === "DELAYED") {
                 /* Expects a nested query object 

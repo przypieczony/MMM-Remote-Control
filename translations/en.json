@@ -61,6 +61,8 @@
 
     "CONFIRM_SHUTDOWN": "The system will shut down.",
     "CONFIRM_RESTART": "The system will restart.",
+    "CONFIRM_WIFI_RESET": "You are about to reset iMirror WiFi connection. In order to change WiFi network connect to imirror_connect WiFi network and visit http://imirror.local:8888 or (http://192.168.42.1:8888).<br>Do you want to continue?",
+    "WIFI_RESET": "Reset WiFi connection",
 
     "LOAD_ERROR": "If you see this message, an errror occured when loading the javascript file. Please go to the following link and see if this a known problem with your browser:",
     "ISSUE_LINK": "Github issue page",

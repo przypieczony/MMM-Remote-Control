@@ -1564,17 +1564,35 @@ var buttons = {
 //        Remote.sendSocketNotification("REMOTE_ACTION", { action: "DEVTOOLS" });
 //    },
     "reset-wifi-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "RESET_WIFI" });
-        //window.open("/", "_blank");
+        var self = Remote;
+
+        var wrapper = document.createElement("div");
+        var text = document.createElement("span");
+        text.innerHTML = self.translate("CONFIRM_WIFI_RESET");
+        wrapper.appendChild(text);
+
+        var ok = self.createSymbolText("fa fa-refresh", self.translate("WIFI_RESET"), function() {
+            Remote.sendSocketNotification("REMOTE_ACTION", { action: "RESET_WIFI" });
+            window.open("http://192.168.42.1:8888", "_blank");
+        });
+        wrapper.appendChild(ok);
+
+        var cancel = self.createSymbolText("fa fa-times", self.translate("CANCEL"), function() {
+            self.setStatus("none");
+        });
+        wrapper.appendChild(cancel);
+
+        self.setStatus(false, false, wrapper);
+
     },
     "toggle-led-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "LED_SWITCH" });
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "TOGGLE_LED" });
     },
     "horizontal-monitor-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOR_VERTICAL" });
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOR_HORIZONTAL" });
     },
     "vertical-monitor-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOR_HORIZONTAL" });
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOR_VERTICAL" });
     },
     // config menu buttons
     "add-module": function() {
