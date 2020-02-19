@@ -745,7 +745,7 @@ module.exports = NodeHelper.create(Object.assign({
             }
             if (query.action === "RESET_WIFI") {
                 this.shellExecute("sudo rm -rf /var/local/wifi-name")
-		this.shellExecute("sudo /etc/NetworkManager/dispatcher.d/wifi-connect-check.sh wlan0 down")
+                this.shellExecute("sudo /usr/bin/nmcli device disconnect wlan0")
                 return;
             }
             if (query.action === "MONITOR_VERTICAL") {
