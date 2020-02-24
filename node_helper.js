@@ -756,7 +756,12 @@ module.exports = NodeHelper.create(Object.assign({
                 this.shellExecute("echo horizontal")
                 return;
             }
-            if (query.action === "TOGGLE_LED") {
+            if (query.action === "LED_ON") {
+                self.sendResponse(res);
+                self.sendSocketNotification(query.action);
+                return true;
+            }
+            if (query.action === "LED_OFF") {
                 self.sendResponse(res);
                 self.sendSocketNotification(query.action);
                 return true;

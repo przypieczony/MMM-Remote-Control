@@ -139,9 +139,12 @@ Module.register("MMM-Remote-Control", {
         if (notification === "NOTIFICATION") {
             this.sendNotification(payload.notification, payload.payload);
         }
-	if (notification === "TOGGLE_LED") {
+	if (notification === "LED_ON") {
             this.sendNotification(notification);
 	}
+    if (notification === "LED_OFF") {
+            this.sendNotification(notification);
+    }
     },
 
     buildCssContent: function(brightness) {

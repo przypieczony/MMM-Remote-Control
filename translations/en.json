@@ -25,6 +25,9 @@
     "CHANGE_WIFI": "Reset WiFi network",
     "SETTINGS_MENU": "Settings",
     "TOGGLE_LED": "LED switch",
+    "LED_ON": "Switch LED on",
+    "LED_OFF": "Switch LED off",
+
     "HORIZONTAL_MONITOR": "Switch display horizontal",
     "VERTICAL_MONITOR": "Switch display vertical",
 

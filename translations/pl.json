@@ -25,6 +25,8 @@
     "CHANGE_WIFI": "Reset WiFi",
     "SETTINGS_MENU": "Opcje",
     "TOGGLE_LED": "LED włącz/wyłacz",
+    "LED_ON": "Włącz oświetlenie LED",
+    "LED_OFF": "Wyłacz oświetlenie LED",
 
     "SHOWALL": "Pokaż wszystkie",
     "HIDEALL": "schowaj wszystkie",

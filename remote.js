@@ -1585,8 +1585,11 @@ var buttons = {
         self.setStatus(false, false, wrapper);
 
     },
-    "toggle-led-button": function() {
-        Remote.sendSocketNotification("REMOTE_ACTION", { action: "TOGGLE_LED" });
+    "led-on-button": function() {
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "LED_ON" });
+    },
+    "led-off-button": function() {
+        Remote.sendSocketNotification("REMOTE_ACTION", { action: "LED_OFF" });
     },
     "horizontal-monitor-button": function() {
         Remote.sendSocketNotification("REMOTE_ACTION", { action: "MONITOR_HORIZONTAL" });
