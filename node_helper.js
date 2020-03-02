@@ -749,11 +749,11 @@ module.exports = NodeHelper.create(Object.assign({
                 return;
             }
             if (query.action === "MONITOR_VERTICAL") {
-                this.shellExecute("echo vertical")
+                this.shellExecute("sudo sed -r 's/(display_rotate)=[[:digit:]]/\\1=0/' -i /boot/config.txt && sudo reboot")
                 return;
             }
             if (query.action === "MONITOR_HORIZONTAL") {
-                this.shellExecute("echo horizontal")
+                this.shellExecute("sudo sed -r 's/(display_rotate)=[[:digit:]]/\\1=0/' -i /boot/config.txt && sudo reboot")
                 return;
             }
             if (query.action === "LED_ON") {
