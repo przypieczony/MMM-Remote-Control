@@ -114,6 +114,13 @@ a {
     justify-content: flex-start;
 }
 
+.button:hover,
+.button:focus {
+  color: #000000;
+  border-color: currentColor;
+  background-color: white;
+}
+
 .button.bright {
     border: 1px solid #999;
 }
@@ -189,18 +196,6 @@ a {
 #update-module-results .module-line>span {
     overflow-x: auto;
     white-space: nowrap;
-}
-
-.results>div:nth-child(even) {
-    background-color: #222;
-}
-
-#add-module-results>div {
-    background-color: #000;
-}
-
-#visible-modules-results>div {
-    background-color: #000;
 }
 
 #alert input {
